@@ -4,3 +4,127 @@ body {
     margin: 0;
     padding: 0;
 }
+#map{
+    height: 100vh;
+}
+.title{
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    font-size: 40px;
+    z-index: 10;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+.search-Container{
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    background-color: #454e53;
+    z-index: 30;
+    top: 80px;
+    left: 100px;
+    border-radius: 30px;
+}
+.search{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.search input{
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    
+}
+.search input:focus {
+    outline: none;
+} 
+.search i{
+    color: white;
+    font-size: 25px;
+}
+.stores-list-container{
+    width: 350px;
+    height: 400px;
+    background-color:white;
+    position: absolute;
+    z-index: 30;
+    top: 150px;
+    left: 100px;
+    border-radius: 30px;
+    bottom: 20px;
+}
+.stores-list {
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-y: scroll;
+    height: 100%;
+}
+.store-container{
+    display: flex;
+    border-bottom: 1px solid #979797;
+}
+.store-info-container{
+    flex-grow: 1;
+}
+.store-address{
+    font-size: 16px;
+    font-weight: bold;
+    color: #514C4C;
+    margin-top: 30px;
+}
+.store-address span{
+    display: block;
+}
+.store-info-container .store-phone-number{
+    color: #B5ADAD;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.store-number-container {
+    align-items: center ;
+    display: flex;
+}
+.store-number{
+    width: 30px;
+    height: 30px;
+    background-color: #454e53;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+/* /////////////////////// SCROLL BAR //////////////////////////////// */
+
+.stores-list::-webkit-scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+}
+
+.stores-list::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 30px;
+    /* color of the tracking area */
+}
+
+.stores-list::-webkit-scrollbar-thumb {
+    background-color: #B5ADAD;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #979797;
+    /* creates padding around scroll thumb */
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
